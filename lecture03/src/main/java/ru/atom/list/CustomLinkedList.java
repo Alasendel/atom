@@ -10,52 +10,71 @@ public class CustomLinkedList<E> implements List<E> {
 
     @Override
     public int size() {
-        throw new UnsupportedOperationException();
+        return count;
     }
 
     @Override
     public boolean isEmpty() {
-        throw new UnsupportedOperationException();
+        if (!head) {
+            return true;
+        } else {
+            return false;
+        }
     }
 
     @Override
     public boolean contains(Object o) {
-        throw new UnsupportedOperationException();
+
     }
 
     @Override
     public Iterator<E> iterator() {
-        throw new UnsupportedOperationException();
+
     }
 
     @Override
     public boolean add(E e) {
-        throw new UnsupportedOperationException();
+        ListNode<E> buf = new ListElement();
+        buf.key = e;
+        if (!count) {
+            head = new ListNode<E>;
+        }
+        ListNode<E> buf = new ListNode<E>;
+        current.next = buf;
+        buf.prev = current;
+        buf.next = null;
+        count++;
     }
 
     @Override
     public boolean remove(Object o) {
-        throw new UnsupportedOperationException();
+        ListNode<E> check = head;
+        while(check.key != o.key) {
+            check = check.next;
+        }
+        check.prev.next = check.next;
+        check.next.prev = check.prev;
+        check.next = null;
+        check.prev = null;
     }
 
     @Override
     public void clear() {
-        throw new UnsupportedOperationException();
     }
 
     @Override
     public E get(int index) {
-        throw new UnsupportedOperationException();
+
     }
 
     @Override
     public int indexOf(Object o) {
-        throw new UnsupportedOperationException();
+
     }
 
     @Override
     public boolean addAll(Collection<? extends E> c) {
-        throw new UnsupportedOperationException();
+
     }
 
 

@@ -5,7 +5,10 @@ import org.junit.Test;
 
 import static junit.framework.TestCase.assertTrue;
 import static org.junit.Assert.assertFalse;
+<<<<<<< HEAD
 
+=======
+>>>>>>> f7ce3023e38a53fad34ab83d30d9267ab7b1d0d3
 
 public class PointPointCollisionTest {
     @Test

@@ -16,6 +16,13 @@ public class Util {
      * @return the largest of values.
      */
     public static int max(int[] values) {
+        int len = values.length;
+        static final int ans = Integer.MIN_VALUE;
+        for(int i = 0; i < len; i++) {
+            if(values[i] > ans) {
+                ans = values[i];
+            }
+        }
         throw new UnsupportedOperationException();
     }
 
